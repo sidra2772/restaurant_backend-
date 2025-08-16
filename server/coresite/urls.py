@@ -40,10 +40,11 @@ schema_view = get_schema_view(
 urlpatterns = [
     path('api/admin/', admin.site.urls),
     path('api/user/', include('apps.core.urls')),
+    path('api/restaurants/', include('apps.restaurants.urls')),
     path('api/user-profile/', include('apps.userprofile.urls')),
     path('api/api-auth/', include('rest_framework.urls')),
     path('swagger<format>/', schema_view.without_ui(cache_timeout=0), name='schema-json'),
-    path('swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
+    path('', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
     path('redoc/', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),
 
 
