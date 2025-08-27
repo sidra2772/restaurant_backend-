@@ -59,6 +59,6 @@ txaio
 typing_extensions
 urllib3
 wget
-
+gunicorn
 drf-yasg~=1.21.7
 djangorestframework-simplejwt~=5.3.1
