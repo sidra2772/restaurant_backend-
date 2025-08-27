@@ -1,4 +1,5 @@
-from .environment import env
+# from .environment import env
+from .environment import env, os, BASE_DIR
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.postgresql',
